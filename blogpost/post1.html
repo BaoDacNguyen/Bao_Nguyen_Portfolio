@@ -7,60 +7,73 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link href="post1css.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 		<style>
-			section:before{
-				height: 54px;
-				content: "";
-				display: block;
-			}
 			section{
 				min-height: 100vh;
 			}
 			html{
-			scroll-behavior: smooth;
+				scroll-behavior: smooth;
+			}
+			iframe{
+				margin-left: auto;
+				margin-right: auto;
 			}
 		</style>
 </head>
 <body>
-	<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<ul>
-			<li>
-				<a href="../index.html"> Home </a>
-			</li>
-		</ul>
-	</nav>
-	<h1> Blog 1: The CIA Triad of Cybersecurity!</h1> <!-- title and title image-->
-	<img src="../images/blog1_intro.jpg">
-
-	<h3> Introduction </h3> <!-- intro paragraph-->
-		<p> What is <a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank"> Cybersecurity</a>? Cybersecurity is alway a big focus that everyone talk about in today tech age. From big tech company to the Department of Defense, cyber security is alway the big concern; However, how do we know if our data is safely secure and threat free? Today, I will explore the three main principles/requirement that must be met so we can safely say that our system is cyber secured. 
-		We can call these three priciples as the CIA Triad of Cybersecurity:
-			<ul>
-				<li>Confidentiality</li>
-				<li>Integrity</li>
-				<li>Availability</li>
+		<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="top: -0.5em;">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html"> Home </a>
+				</li>
 			</ul>
-		</p>
+		</nav>
+		<h1 class="title"> Blog 1: The CIA Triad of Cybersecurity!</h1> <!-- title and title image-->
+		<img src="../images/blog1_intro.jpg" class="mx-0 d-block img-fluid" style="width: 1520px">
+		<div class="container font bg-light">
+				<iframe width="900" height="506" src="https://www.youtube.com/embed/rwigKjEsdTc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" class="container-fluid pt-3"></iframe>
+				
+				<h3 class="headerFont"> Introduction </h3> <!-- intro paragraph-->
+					<p> What is <a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank"> Cybersecurity</a>? Cybersecurity is alway a big focus that everyone talk about in today tech age. From big tech company to the Department of Defense, cyber security is alway the big concern; However, how do we know if our data is safely secure and threat free? Today, I will explore the three main principles/requirement that must be met so we can safely say that our system is cyber secured. 
+					We can call these three priciples as the CIA Triad of Cybersecurity:
+						<ul>
+							<li>Confidentiality</li>
+							<li>Integrity</li>
+							<li>Availability</li>
+						</ul>
+					</p>
 
-	<h3> Confidentiality </h3> <!-- confidentialily paragraph-->
-		<p>What is it mean by confidentiality? It is the property of information is not made available or disclosed to unauthorized individuals. The ability to keep a piece of infornmation or data a secret and maintain it's secrecy from unauthorized access is the ability to keep data confidential. Lack of confidentiality will lead to leakage of data and can result in millions of damage or even national security. </p>
-		<img src="../images/blog1_confidential.jpg">
+				<h3 class="headerFont"> Confidentiality </h3> <!-- confidentialily paragraph-->
+					<img src="../images/blog1_confidential.jpg" class="imageResize d-block img-fluid rounded imagesPad">
+					<p>What is it mean by confidentiality? It is the property of information is not made available or disclosed to unauthorized individuals. The ability to keep a piece of infornmation or data a secret and maintain it's secrecy from unauthorized access is the ability to keep data confidential. Lack of confidentiality will lead to leakage of data and can result in millions of damage or even national security. Preventions method should be implement to help keep authorized users safe and keep out unathorized users. End users is often the biggest weakness in the security chain so we should focus more user's training. In addition to training, common security authentication method is <a href="https://www.cnet.com/news/two-factor-authentication-what-you-need-to-know-faq/" target="_blank"> two-factor authentication</a> along with biometric verification, security tokens and digital certificates.</p>
+					<img src="../images/two-step-verification-2.gif" class="imageResize d-block img-fluid rounded">
 
-	<h3> Integrity </h3> <!-- intergrity paragraph-->
-		<p></p>
-		<img src="">
+				<h3 class="headerFont"> Integrity </h3> <!-- intergrity paragraph-->
+					<img src="../images/Data-Security.gif" class="imageResize d-block img-fluid rounded imagesPad">
+					<p>Integrity in cybersecurity is the ability to prevent unauthorized modification of information. Any unauthorized changes will be in violation of the integrity of that piece of information. Unauthorized alteration doesn't neccessary mean that it come from an intruder but also from unintentional alter by flaw in the system or users. A prevention method to secure intergrity is strong authentication method that only allow authorized users to make changes and not by anyone else. To accomplish that, we can assign digital certificates/tokens to users and implements a secure transport protocol.</p>
 
-	<h3> Availability </h3> <!-- availability paragraph-->
-		<p></p>
-		<img src="">
+				<h3 class="headerFont"> Availability </h3> <!-- availability paragraph-->
+					<p>In today age of high speed internet, our daily tasks require a large amount of information readily available to us in a reasonably fast amount of time. To ensure availability, there should be steps that protect the data from failures and also antivirus software to prevent malwares from corrupting the server. One type of attack that targeted availability specifically is <a href="https://www.us-cert.gov/ncas/tips/ST04-015" target="_blank">Denial-of-Services</a> attack.  </p>
+					<img src="../images/dos.gif" class="imageResize d-block img-fluid imagesPad">
 
-	<h3> Conclusion </h3> <!-- conclusion paragraph-->
-		<p></p>
-		<img src="">
-
-	<h3> About Me </h3>
-		<img src='../images/myheadshot.png'>
-        <h4>My Name</h4>
-        <span>This is info about me</span>
+				<h3 class="headerFont"> Conclusion </h3> <!-- conclusion paragraph-->
+					<p>In conclusion, by maintaining the three principles of cybersecurity, we guarantee to protect our data and server from unauthorized access. Each principles relies on each others to provide full protection so by uphold one principles it help us maintaining the other principles as well. Good practices would be strong authentication methods with access control in place. Security measures in cybersecurity are build on these basic principles and prevent attacks that attempted to violate these principles.</p>
+					<img src="">
+		</div>
+	<hr>
+		<div class="bg-dark pb-1 container-fluid">
+			<h3> About Me </h3>
+				<div class="row">
+					<div class="col-lg-2 col-sm-4">
+						<img src='../images/myheadshot.png' class="img-fluid" style="width: 250px">
+					</div>
+					<div class="col-lg-10 col-sm-8">
+						<h4>My Name</h4>
+						<span>This is info about me</span>
+					</div>
+				</div>
+		</div>
 </body>
 </html>
