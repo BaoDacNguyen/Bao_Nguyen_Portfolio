@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<html>
+	<head>
+		<title> Simple Note App </title>
+		</head>
+	<body class="bg-dark">
+		<nav id ="header" class="bg- text-white px-2 pt-2 pb-4">
+			<a class="navbar-brand"><strong>Simple Note App</strong></a>
+		</nav>
+		<div class="container text-white mx-auto">	
+			<p id='note' class="border border-white rounded px-2 py-2"></p>
+			<div class="py-2">
+				<input id="title" placeholder="Note Title" type="text" class="form-control">
+			</div>
+			<div class="py-2">
+				<textarea id="body" rows="20" cols="50" placeholder="Start your note here" 
+					type="text" class="form-control"></textarea> 
+			</div>
+			<button id="save" class="btn btn-outline-white btn-light pt-2" type="button">Save note</button>
+		</div>
+		<script src="scripts/function.js"></script>
+		<div class ="footer"></div>
+	</body>
+</html>	
