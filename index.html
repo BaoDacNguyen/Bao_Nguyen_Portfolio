@@ -1,194 +1,194 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Portfolio</title>
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<style>
-		section:before{
-			height: 54px;
-			content: "";
-			display: block;
-		}
-		section{
-			min-height: 100vh;
-		}
-		#section-showcase{
-			background-image: url(./images/showcase.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		html{
-			scroll-behavior: smooth;
-		}
-	</style>
-</head>
-<body>
-	<nav id="top-navbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="top: -0.5em;">	
-		<a class="navbar-brand" href="#section-showcase"><strong>Bao Nguyen Portfolio</strong></a>
+    <head>
+        <title>My Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <style>
+            body {
+                position: relative;
+            }
+            section {
+                height: 100vh;
+            }
+            ::-webkit-scrollbar-track{
+                box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                background-color: #F5F5F5;
+            }
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-			<div class="collapse navbar-collapse" id="menu">
-				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item"> <a class="nav-link" href="#section-home"> Home </a>	</li>
-					<li class="nav-item"> <a class="nav-link" href="#section-about"> About </a>	</li>
-					<li class="nav-item"> <a class="nav-link" href="#section-projects"> Projects </a>	</li>
-					<li class="nav-item"> <a class="nav-link" href="#section-blog"> Blog </a>	</li>
-					<li class="nav-item"> <a class="nav-link" href="#section-contact"> Contact </a>	</li>
-				</ul>
-			</div>
-	</nav>
-	
-	<section id="section-showcase" class="jumbotron d-flex align-items-center"> 
-		<div class="container text-center text-light">
-			<h1> Bao's Personal Porfolio</h1>
-			<p> This is an online personal portfolio that contains many projects that I developed as school assignments and on personal time.</p>
-		</div>
-	</section>
+            ::-webkit-scrollbar{
+                width: 10px;
+                background-color: #F5F5F5;
+            }
 
-	<div class="container-fluid">
-		<aside id="sidebar">	
-			<div class="bg-dark text-light float-right col-4 pt-4 mt-4">
-				<h3> News: </h3>
-				<p>placeholder text</p>
-			</div>
-		</aside>
-
-		<section id="section-home" class="bg-danger p-1 container-fluid">
-			<h1> Welcome </h1>
-			<hr>
-			<p>Welcome to my personal online protfolio, this is page is a collection of projects I had worked on in my Web Development class and maybe some personal side project as well. It sole purpose is to show-case my works for potential employers.</p>	
-		</section>
-
-		<section id="section-about" class="bg-primary container-fluid pb-1">
-			<h1> About </h1>
-			<hr>
-			<div class="row">
-				<div class="col-lg-2 col-sm-4">
-					<img src="images/myheadshot.png" class="img-fluid" alt="personal headshot">
-				</div>
-				<div class="col-lg-10 col-sm-8">
-					<h4> Bao Nguyen </h4>
-					<p>	This is info about me </p>
-				</div>
-			</div>
-			<table class="table mt-4">
-				<thead>
-					<tr>
-						<th colspan="2"> Technical Skills </th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th> Programming tools </th>
-						<td> Java, Javascript </td>
-					</tr>
-					<tr>
-						<th> Frontend tools </th>
-						<td> HTML, CSS </td>
-					</tr>
-					<tr>
-						<th> Database tools </th>
-						<td> SQL </td>
-					</tr>
-					<tr>
-						<th> Version control & Deployment tools </th>
-						<td> Git, GitHub, GitLab </td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		
-		<section id="section-projects" class="bg-success container-fluid">
-			<h1> Projects </h1>
-			<hr>
-			<p>Description of your projects</p>
-			<div class="container">
-				<div id="projects" class="card-deck text-center">
-					<a class="card bg-dark btn" href='#' target="_blank">
-						<div class="card-header">
-							<p class="text-light">Project</p>
-						</div>
-						<img class="card-img-top" src='images/logo.png' alt="Project logo">
-						<div class="card-body">
-							<h4 class="card-title text-light"> Project Name </h4>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted"> by Bao Nguyen</small>
-						</div>
-					</a>
-					<a class="card bg-dark btn" href='#' target="_blank">
-						<div class="card-header">
-							<p class="text-light">Project</p>
-						</div>
-						<img class="card-img-top" src='images/logo.png' alt="Project logo">
-						<div class="card-body">
-							<h4 class="card-title text-light"> Project Name </h4>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted"> by Bao Nguyen</small>
-						</div>
-					</a>
-					<a class="card bg-dark btn" href='#' target="_blank">
-						<div class="card-header">
-							<p class="text-light">Project</p>
-						</div>
-						<img class="card-img-top" src='images/logo.png' alt="Project logo">
-						<div class="card-body">
-							<h4 class="card-title text-light"> Project Name </h4>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted"> by Bao Nguyen</small>
-						</div>
-					</a>
-				</div>
-			</div>	
-		</section>
-		
-		<section id="section-blog" class="bg-warning pb-1 container-fluid">
-			<h1>Blog</h1>
-			<hr>
-			<p>Explain what your blog will be about</p>
-			<hr>
-			<article>
-				<h3>Topic 1</h3>
-				<small> Posted by Bao Nguyen on this.date</small>
-				<p>Summary of this blog post</p>
-				<a class="btn btn-outline-dark" href="blogpost/post1.html" target="_blank">Read More</a>
-				<hr>
-			</article>
-		</section>
-
-		<section id="section-contact" class="bg-secondary container-fluid">
-			<h1>Contact</h1>
-			<hr>
-			<h4 class="text-center">Send Message</h4>
-			<form>
-				<div class="form-group">
-					<input type="text" id="name" placeholder="Your Name"> 
-				</div>
-				<div>
-					<input class="form-group" type="email" id="email" placeholder="Your Email">
-				</div>
-				<div>
-					<input class="form-group" type="subject" id="subject" placeholder="Subject">
-				</div>
-				<div>
-					<textarea class="form-group" rows="4" id="message" placeholder="Message"></textarea>
-				</div>
-				<button class="btn btn-lg btn-primary" type="submit"> Submit </button>
-			</form>
-		</section>
-		<footer class="bg-light">
-			<div class="container text-muted text-center">
-				<p>Copyright & copy; 2020 Bao Nguyen</p>
-			</div>
-		</footer>
-	</div>
-</body>
+            ::-webkit-scrollbar-thumb{
+                background-color: #000000;
+                border: 2px solid #555555;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" class="text-white">
+        <nav id="top-navbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="top: -0.5em;">	
+            <a class="navbar-brand"><strong>Bao Nguyen Portfolio</strong></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"> <a class="nav-link" href="#section-home"> Home </a>	</li>
+                        <li class="nav-item"> <a class="nav-link" href="#section-about"> About </a>	</li>
+                        <li class="nav-item"> <a class="nav-link" href="#section-projects"> Projects </a>	</li>
+                        <li class="nav-item"> <a class="nav-link" href="#section-blog"> Blog </a>	</li>
+                    </ul>
+                </div>
+        </nav>
+            <section id="section-home" class="jumnotron d-flex align-items-center bg-dark container-fluid">
+                <div class="container text-center text-light">    
+                    <h1> Welcome </h1>
+                    <hr>
+                    <p>Welcome to my personal online protfolio, this is page is a collection of projects I had worked on in my Web Development class and maybe some personal side project as well. It sole purpose is to show-case my works for potential employers.</p>	
+                </div>
+            </section>
+    
+            <section id="section-about" class="bg-dark container-fluid pb-1">
+                <h1> About </h1>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4">
+                        <img src="images/myheadshot.png" class="img-fluid" alt="personal headshot">
+                    </div>
+                    <div class="col-lg-10 col-sm-8">
+                        <h4> Bao Nguyen </h4>
+                        <p>	This is info about me </p>
+                    </div>
+                </div>
+                <table class="table mt-4 text-white">
+                    <thead>
+                        <tr>
+                            <th colspan="2"> Technical Skills </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th> Programming tools </th>
+                            <td> Java, Javascript </td>
+                        </tr>
+                        <tr>
+                            <th> Frontend tools </th>
+                            <td> HTML, CSS </td>
+                        </tr>
+                        <tr>
+                            <th> Database tools </th>
+                            <td> SQL </td>
+                        </tr>
+                        <tr>
+                            <th> Version control & Deployment tools </th>
+                            <td> Git, GitHub, GitLab </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="section-projects" class="bg-dark container-fluid">
+                <h1> Projects </h1>
+                <hr>
+                <p>These are projects that I created for classes or on personal time</p>
+                <div class="container">
+                    <div id="projects" class="card-deck text-center">
+                        <a class="card bg-dark btn" href='hw3/index.html' target="_blank">
+                            <div class="card-header">
+                                <p class="text-light">Project 1</p>
+                            </div>
+                            <img class="card-img-top" src='images/Student_Notes-512.webp' alt="Project logo">
+                            <div class="card-body">
+                                <h4 class="card-title text-light"> Simple Note App </h4>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"> by Bao Nguyen</small>
+                            </div>
+                        </a>
+                        <a class="card bg-dark btn" href='#' target="_blank">
+                            <div class="card-header">
+                                <p class="text-light">Project</p>
+                            </div>
+                            <img class="card-img-top" src='images/logo.png' alt="Project logo">
+                            <div class="card-body">
+                                <h4 class="card-title text-light"> Project Name </h4>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"> by Bao Nguyen</small>
+                            </div>
+                        </a>
+                        <a class="card bg-dark btn" href='#' target="_blank">
+                            <div class="card-header">
+                                <p class="text-light">Project</p>
+                            </div>
+                            <img class="card-img-top" src='images/logo.png' alt="Project logo">
+                            <div class="card-body">
+                                <h4 class="card-title text-light"> Project Name </h4>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"> by Bao Nguyen</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+            </section>
+            
+            <section id="section-blog" class="bg-dark pb-1 container-fluid">
+                <h1>Blog</h1>
+                <hr>
+                <p>Explain what your blog will be about</p>
+                <hr>
+                <article>
+                    <h3>Blog 1</h3>
+                    <small> Posted by Bao Nguyen on this.date</small>
+                    <p>Summary of this blog post</p>
+                    <a class="btn btn-info" href="blogpost/post1.html" target="_blank">Read More</a>
+                    <hr>
+                </article>
+                <article>
+                    <h3>Blog 2</h3>
+                    <small> Posted by Bao Nguyen on this.date</small>
+                    <p>Summary of this blog post</p>
+                    <a class="btn btn-info" href="blogpost/post2.html" target="_blank">Read More</a>
+                    <hr>
+                </article>
+            </section>
+            <footer class="bg-light">
+                <button data-toggle="collapse" data-target="#contactclose" class="rounded btn btn-info btn-block text-dark">Contact</button>
+                <div class="collapse" id="contactclose">	
+                    <div id="section-contact" class="bg-light container-fluid text-dark">	
+                        <h1>Contact</h1>
+                            <hr>
+                            <h4 class="text-center">Send Message</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" id="name" placeholder="Your Name" class="form-control"> 
+                                </div>
+                                <div>
+                                    <input class="form-group form-control" type="email" id="email" placeholder="Your Email">
+                                </div>
+                                <div>
+                                    <input class="form-group form-control" type="subject" id="subject" placeholder="Subject">
+                                </div>
+                                <div>
+                                    <textarea class="form-group form-control" rows="4" id="message" placeholder="Message"></textarea>
+                                </div>
+                                    <button class="btn btn-lg btn-primary" id="submit"> Submit </button>
+                            </form>
+                    </div>
+                </div>
+                <div class="container text-muted text-center">
+                    <p>Copyright & copy; 2020 Bao Nguyen</p>
+                </div>
+            </footer>
+            <script src='scripts/form-model.js'></script>
+            <script src='scripts/form-controller.js'></script>
+    </body>
 </html>
+

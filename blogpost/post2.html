@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Blog 2: Simple Note App</Title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <style>
+			section{
+				min-height: 100vh;
+			}
+			html{
+				scroll-behavior: smooth;
+			}
+			iframe{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			hr.hr1{
+				border-top: 1px dashed black;
+			}
+			div{
+				padding: 5px;
+			}
+		</style>
+    </head>
+    <body class="bg-dark">
+        <nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="top: -0.5em;">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html"> Home </a>
+				</li>
+			</ul>
+		</nav>
+		<img src="../images/note-taking-1400x1050.png" class="mx-auto d-block img-fluid" style="width: 1140px; height: 600px;">
+        <div class="container mx-auto bg-light">
+			<h1 class="title pt-3"> Blog 2: The Simple Note App Version 1.0</h1>
+            <h3>This blog is an overview of my first JS app that I made for a class assignment. Here is
+				the link to the app <a href="../Hw3/index.html" target="_blank">here.</a> </h3>
+			<h2>Overview</h2>
+			<p>This app is a simple note app that similar to the one on your phone that you can quickly write down important information without opening up a
+				document editor. This is the very early design of this app with limited functionalities attached to it. The app so far can take in input from user
+				and save it with local web storage and display it back to the screen. 
+			</p>
+			<h2>Development struggles</h2>
+			<p>During the development of this app, I faced many new problems that was very frustrating at the time. The biggest problem to me was to efficiently
+				use the local storage features to save my input and display it out to the screen with innerHTML command. It often fail to grab the user input and 
+				give back a null value. Using the innerHTML to display item was also a learning curve for me, it did took me some time to push the item I wanted to
+				the screen properly with it. 
+			</p>
+			<h2>Future improvements</h2>
+			<p class="pb-2">For future version I want to make an actual storage system to where the note that was created will save and a user can make multiple notes as once and 
+				can re-edit their previous saved note. I feel like that is an essential functions to the note app. ANother possible upgrade is to add a function to make 
+				the app into a to-do list or shopping list where the user can cross-out item or check mark the note as they went through it.   
+			</p>
+			<hr class="hr1 pb-4">
+
+        </div>
+        <hr>
+	<div class="bg-dark pb-1 container-fluid">
+		<h3 style="color: white"> About Me </h3>
+			<div class="row">
+				<div class="col-lg-2 col-sm-4">
+					<img src='../images/myheadshot.png' class="img-fluid" style="width: 250px">
+				</div>
+				<div class="col-lg-10 col-sm-8" style="color: white">
+					<h4>Bao Nguyen</h4>
+					<span>Computer Science Undergraduate <br>
+						  University of New Orleans <br>
+						  email: baodacnguyen@gmail.com</span>
+				</div>
+			</div>
+	</div>
+    </body>
+</html>
