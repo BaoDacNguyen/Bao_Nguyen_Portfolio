@@ -5,7 +5,7 @@ const listControllers = function(){
 
 const submitEvent = function(){
     const formData = new Object();
-    formData[name] = playerName;
+    formData[name] = useName();
     formData[score] = getScore();
 
     postToGoogleDB(formData);
